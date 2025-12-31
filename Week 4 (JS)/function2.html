@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+    <body>
+
+        <!--embedding a JavaScript function right inside a html file-->
+        <!--when you click on h1 which is "JavaScript" it changes to "is awesome"-->
+
+        <!--Now we are making that if we click the second time the text goes back to its original text using conditional statements-->
+
+        <h1 id="heading"onclick="changeText()">JavaScript</h1>
+        
+        <!--onclick defines an event  //replaced double quote with single to avoid clutching/bugs-->
+           
+           <script>
+                function changeText(){
+                    if (document.getElementById("heading").innerHTML== 'JavaScript' ){
+                        document.getElementById("heading").innerHTML='Is awesome'
+                    }else{
+                        document.getElementById("heading").innerHTML='JavaScript'
+                    }
+                }
+           </script> 
+        </body>
+</html>

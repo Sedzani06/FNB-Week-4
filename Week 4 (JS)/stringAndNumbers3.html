@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="outputText"></p>
+
+
+        <script>
+            var text1= "10"; // javaScript will recognize this as a string
+            var text2="5";
+
+            var num1=stringToNumber(text1); //value of text1 (10) will be stored in num1
+            var num2=stringToNumber(text2); //value of text2 (5) will be stored in num2
+
+            if(isNaN(num1) || isNaN(num2)){    //NaN means not a number
+                document.getElementById("outputText").innerHTML = "you have not entered a valid number,Please try again."
+            }else{
+                document.getElementById("outputText").innerHTML = num1 + num2;
+            }
+
+            //converting text/string to number
+            function stringToNumber(text){
+                return parseInt(text); // parseInt is a builtin function that converts string to number
+            }
+            
+        </script>
+    </body>
+</html>

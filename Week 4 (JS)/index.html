@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+    <body>
+            <h1 id="heading1">Hello</h1>
+            <p id="paragraph1">Everyone</p>
+
+            <script>
+
+                /********Changing or adding text into html using JS******/
+
+                document.getElementById("heading1").innerHTML=("This is JavaScript");//this the hello text 
+                document.getElementById("paragraph1").innerHTML=("I'm having fun!");//this changes the everyone text
+
+                /*******Adding a number*****/
+
+                document.getElementById("paragraph1").innerHTML=(5);
+
+                /******Adding a mathematical operation*******/
+                document.getElementById("paragraph1").innerHTML=(5 + 6); //Displays a 11
+                //if you put  numbers between "" the js displays 5+6 because it recognize it as a text rather than a number
+           
+                document.getElementById("paragraph1").innerHTML=("JavaScript" + "is fun");
+                //this will display JavaScriptis fun
+
+                
+           </script> 
+        </body>
+</html>

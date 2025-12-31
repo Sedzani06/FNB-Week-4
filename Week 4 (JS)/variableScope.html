@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="outputText"></p>
+
+        <script>
+            someFunction(); 
+            //if you want the variable to be accessible (global variable) everywhere you must declare it here outside the function
+            
+            function someFunction(){
+                var someVariable=100; //variable declared inside function
+                document.getElementById("outputText").innerHTML=someVariable; //variable is accessible inside a function
+            }
+
+            //variable is not accessible here outside a function
+
+        </script>
+    </body>
+</html>
